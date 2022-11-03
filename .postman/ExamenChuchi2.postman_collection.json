@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "895f3d34-6256-4719-b518-6a96768632a3",
+		"name": "ExamenChuchi2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pruebas",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "prueba",
+						"value": "si",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8083/salchicha/chorizo?Ciudad=Barcelona&Nombre=sandra",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"salchicha",
+						"chorizo"
+					],
+					"query": [
+						{
+							"key": "Ciudad",
+							"value": "Barcelona"
+						},
+						{
+							"key": "Nombre",
+							"value": "sandra"
+						},
+						{
+							"key": "pais",
+							"value": "españa",
+							"disabled": true
+						},
+						{
+							"key": "comida",
+							"value": "pastas",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
