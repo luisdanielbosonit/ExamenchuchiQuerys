@@ -18,7 +18,7 @@ public class Controller {
                             @PathVariable(required = false) String path2,
                             @RequestParam(required = false) HashMap<String,String> query,
                             @RequestHeader(required = false) HashMap<String,String> header){
-        if(!(!header.containsKey("redirige") || header.values().equals("SALTA"))) {
+        if((header.containsKey("redirige") && header.containsValue("SALTA"))) {
             return new ModelAndView("redirect:/salt");
         }
 
